@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.netflix.nebula:gradle-extra-configurations-plugin:3.0.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.nebula/gradle-extra-configurations-plugin/3.0.3/32cd905383b257b4fbd494807520c0b17617d974/gradle-extra-configurations-plugin-3.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.nebula/gradle-extra-configurations-plugin/3.0.3/2c018d085196069a9c085d793f6bd81c1b64c7f9/gradle-extra-configurations-plugin-3.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

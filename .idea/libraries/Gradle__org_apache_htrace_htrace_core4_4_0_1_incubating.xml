@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.htrace:htrace-core4:4.0.1-incubating">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.htrace/htrace-core4/4.0.1-incubating/f4ef727cb4675788ac66f48e217020acc1690960/htrace-core4-4.0.1-incubating.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.htrace/htrace-core4/4.0.1-incubating/3dd21b976824abd0c867b68e8437ae8426b344a3/htrace-core4-4.0.1-incubating-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

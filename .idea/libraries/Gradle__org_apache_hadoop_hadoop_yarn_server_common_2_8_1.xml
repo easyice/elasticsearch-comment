@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.hadoop:hadoop-yarn-server-common:2.8.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-yarn-server-common/2.8.1/7b8bd1f1cab98e3f6c5c4391b58d4da91f78a69a/hadoop-yarn-server-common-2.8.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-yarn-server-common/2.8.1/beeb49d527f05e6f804fae49105e615677366c4f/hadoop-yarn-server-common-2.8.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

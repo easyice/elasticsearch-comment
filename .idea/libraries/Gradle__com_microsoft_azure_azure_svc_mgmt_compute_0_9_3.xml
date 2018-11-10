@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.microsoft.azure:azure-svc-mgmt-compute:0.9.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.azure/azure-svc-mgmt-compute/0.9.3/602d3e6f5a9f058c2439e8fdf1270cddc811b440/azure-svc-mgmt-compute-0.9.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.microsoft.azure/azure-svc-mgmt-compute/0.9.3/e78f09cb04a5bb5263c7c85c9bcc046768ade977/azure-svc-mgmt-compute-0.9.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

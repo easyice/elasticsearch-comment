@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.netflix.nebula:gradle-contacts-plugin:2.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.nebula/gradle-contacts-plugin/2.2.0/b8b1480722ff7c7ebcc408a641476a5fda341454/gradle-contacts-plugin-2.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.nebula/gradle-contacts-plugin/2.2.0/10bcaaaf953c2d5470e8c7665475636e00ab60ae/gradle-contacts-plugin-2.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

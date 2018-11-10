@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.hadoop:hadoop-yarn-server-tests:tests:2.8.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-yarn-server-tests/2.8.1/6cee9bffd42e3d70ed91bf286ee0e247213eca3f/hadoop-yarn-server-tests-2.8.1-tests.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-yarn-server-tests/2.8.1/350dc9686da13a3dcc83cc1708482735258a656a/hadoop-yarn-server-tests-2.8.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

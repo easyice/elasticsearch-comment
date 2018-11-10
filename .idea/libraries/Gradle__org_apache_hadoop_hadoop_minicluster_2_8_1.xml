@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.hadoop:hadoop-minicluster:2.8.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-minicluster/2.8.1/f24bcdfb0ba597b3c536ee92af0861bd9a9c01b1/hadoop-minicluster-2.8.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.hadoop/hadoop-minicluster/2.8.1/84300380336aefbe23f6a7f3a29ae350f300f7a5/hadoop-minicluster-2.8.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,191 @@
+---
+"Index data and search on the mixed cluster":
+ - do:
+     cluster.health:
+        wait_for_status: yellow
+        wait_for_nodes: 2
+
+ - do:
+     search:
+        type: doc
+        index: test_index
+
+ - match: { hits.total: 5 } # no new indexed data, so expect the original 5 documents from the old cluster
+
+ - do:
+     search:
+       index: index_with_replicas
+
+ - match: { hits.total: 5 } # just check we recovered fine
+
+ - do:
+     bulk:
+        refresh: true
+        body:
+          - '{"index": {"_index": "test_index", "_type": "doc"}}'
+          - '{"f1": "v1_mixed", "f2": 5}'
+          - '{"index": {"_index": "test_index", "_type": "doc"}}'
+          - '{"f1": "v2_mixed", "f2": 6}'
+          - '{"index": {"_index": "test_index", "_type": "doc"}}'
+          - '{"f1": "v3_mixed", "f2": 7}'
+          - '{"index": {"_index": "test_index", "_type": "doc"}}'
+          - '{"f1": "v4_mixed", "f2": 8}'
+          - '{"index": {"_index": "test_index", "_type": "doc"}}'
+          - '{"f1": "v5_mixed", "f2": 9}'
+
+ - do:
+     index:
+       index: test_index
+       type: doc
+       id: d10
+       body: {"f1": "v6_mixed", "f2": 10}
+
+ - do:
+     indices.flush:
+        index: test_index
+
+ - do:
+     search:
+        type: doc
+        index: test_index
+
+ - match: { hits.total: 11 } # 5 docs from old cluster, 6 docs from mixed cluster
+
+ - do:
+     delete:
+       index: test_index
+       type: doc
+       id: d10
+
+ - do:
+     indices.flush:
+        index: test_index
+
+ - do:
+     search:
+        type: doc
+        index: test_index
+
+ - match: { hits.total: 10 }
+
+---
+"Verify that we can still find things with the template":
+  - do:
+      search_template:
+        body:
+          id: test_search_template
+          params:
+            f1: v5_old
+  - match: { hits.total: 1 }
+
+---
+"Verify custom cluster metadata still exists during upgrade":
+  - do:
+      snapshot.get_repository:
+        repository: my_repo
+  - is_true: my_repo
+
+  - do:
+      ingest.get_pipeline:
+        id: "my_pipeline"
+  - match: { my_pipeline.description: "_description" }
+
+---
+"Test old multi type stuff":
+ - skip:
+    version: "6.0.0 - "
+    reason:  multiple types are not supported from 6.0 and beyond
+
+ - do:
+     bulk:
+        refresh: true
+        body:
+          - '{"index": {"_index": "test_index", "_type": "test_type"}}'
+          - '{"f1": "v1_mixed", "f2": 5}'
+          - '{"index": {"_index": "test_index", "_type": "test_type"}}'
+          - '{"f1": "v2_mixed", "f2": 6}'
+          - '{"index": {"_index": "test_index", "_type": "test_type"}}'
+          - '{"f1": "v3_mixed", "f2": 7}'
+          - '{"index": {"_index": "test_index", "_type": "test_type"}}'
+          - '{"f1": "v4_mixed", "f2": 8}'
+          - '{"index": {"_index": "test_index", "_type": "test_type"}}'
+          - '{"f1": "v5_mixed", "f2": 9}'
+
+ - do:
+     index:
+       index: test_index
+       type: test_type
+       id: d10
+       body: {"f1": "v6_mixed", "f2": 10}
+
+ - do:
+     indices.flush:
+        index: test_index
+
+ - do:
+     search:
+        index: test_index
+        type: test_type
+
+ - match: { hits.total: 6 }
+
+ - do:
+     delete:
+       refresh: true
+       index: test_index
+       type: test_type
+       id: d10
+
+ - do:
+     search:
+        index: test_index
+        type: test_type
+
+ - match: { hits.total: 5 }
+
+---
+"Use the percolate query in mixed cluster":
+  - skip:
+      version: " - 5.9.9"
+      reason: "Without document_type parameter. This parameter can't be tested in prior versions because it sometimes emit a warning header, depending if an old or upgrade node it hit"
+
+  - do:
+      search:
+        index: queries
+        body:
+          query:
+            percolate:
+              field: query
+              document:
+                field1: value
+  - match: { hits.total: 1 }
+  - match: { hits.hits.0._id: q1 }
+
+  - do:
+      search:
+        index: queries
+        body:
+          sort: _id
+          query:
+            percolate:
+              field: query
+              document:
+                field1: value
+                field2: value
+  - match: { hits.total: 2 }
+  - match: { hits.hits.0._id: q1 }
+  - match: { hits.hits.1._id: q2 }
+
+  - do:
+      search:
+        index: queries
+        body:
+          sort: _doc
+          query:
+            percolate:
+              field: query
+              document:
+                field2: value
+                field3: value
+  - match: { hits.total: 1 }
+  - match: { hits.hits.0._id: q3 }

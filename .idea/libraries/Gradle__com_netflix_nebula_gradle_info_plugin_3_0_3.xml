@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.netflix.nebula:gradle-info-plugin:3.0.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.nebula/gradle-info-plugin/3.0.3/26507c144b8622489024282c6dcdb2e96f8f50da/gradle-info-plugin-3.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.nebula/gradle-info-plugin/3.0.3/d17176ead16df19fcb28187bda45ce2ceea69a9d/gradle-info-plugin-3.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

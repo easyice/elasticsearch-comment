@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.carrot2:morfologik-fsa:2.1.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.carrot2/morfologik-fsa/2.1.1/87866deba6aa5d19956fbe3406d8ddb5f19f5352/morfologik-fsa-2.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.carrot2/morfologik-fsa/2.1.1/60de57486e91676a5b32f8005fe44d3e89decf6f/morfologik-fsa-2.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

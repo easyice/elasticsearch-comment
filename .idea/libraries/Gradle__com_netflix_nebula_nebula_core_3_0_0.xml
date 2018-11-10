@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.netflix.nebula:nebula-core:3.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.nebula/nebula-core/3.0.0/4b3277899a3e5b69189b938061b554f07cc8205b/nebula-core-3.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.nebula/nebula-core/3.0.0/f81d7912cfffbbbaa922862fd63f2a20cc1d502d/nebula-core-3.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,10 @@
+[[breaking_60_percolator_changes]]
+=== Percolator changes
+
+==== Deprecated percolator and mpercolate apis have been removed
+
+Instead the `percolate` query should be used via either the search or msearch apis.
+
+==== The percolator.map_unmapped_fields_as_string setting has been deprecated
+
+The `percolator.map_unmapped_fields_as_text` setting should be used instead.

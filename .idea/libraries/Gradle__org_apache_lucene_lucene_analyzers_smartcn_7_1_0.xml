@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.lucene:lucene-analyzers-smartcn:7.1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-analyzers-smartcn/7.1.0/2769d7f7330c78aea1edf4d8cd2eb111564c6800/lucene-analyzers-smartcn-7.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-analyzers-smartcn/7.1.0/d275ad27ec348dbf65e1ec012eea9aa8a13d9c45/lucene-analyzers-smartcn-7.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.netflix.nebula:nebula-publishing-plugin:4.4.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.nebula/nebula-publishing-plugin/4.4.4/7dbb6e9eaa6f84680bbf98f2c995da26d907ade7/nebula-publishing-plugin-4.4.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.netflix.nebula/nebula-publishing-plugin/4.4.4/bc056fb4a0309ee92046b52c127ee356e91ea35a/nebula-publishing-plugin-4.4.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
